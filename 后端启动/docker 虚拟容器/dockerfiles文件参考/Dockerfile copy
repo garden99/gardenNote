@@ -1,0 +1,13 @@
+# 使用官方的 Nginx 镜像作为基础
+FROM nginx:latest
+
+# 复制自定义的 Nginx 配置文件到容器内的默认位置
+COPY ./nginx.conf /etc/nginx/nginx.conf
+# 假设证书文件位于与Dockerfile同级的certs目录中
+COPY ./certs/* /etc/nginx/certs/
+
+# 暴露端口（虽然在基础镜像中已经暴露了80端口，这里再次声明一下）
+EXPOSE 443
+
+# 设置容器启动后执行的命令
+CMD ["nginx", "-g", "daemon off;"]
