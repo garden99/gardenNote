@@ -5,7 +5,7 @@
 > ```
 > this.$forceUpdate()
 > ```
->
+> 
 > 强制刷新
 
 # 事件篇
@@ -30,11 +30,12 @@ scroll-vie组件内不滚动的重要说明，如果是scroll-vie组件内包含
 white-space：nowrap
 ```
 
-属性需要满足scroll-vie组件子组件具备
+属性需要满足scroll-vie组件子组件具备是行内属性如行内块，行内弹性
 
-````
+```
 display: inline-block;
-````
+display: inline-flex;
+```
 
 滚动条在手机端默认展示问题可以通过全局手机端设置scrollIndicator属性为none
 
@@ -51,7 +52,7 @@ display: inline-block;
 去除默认样式
 
 > 只需要更改背景颜色和after伪类的边框就好了
->
+> 
 > ![1722042793630](images/关于uniapp的坑/1722042793630.png)
 
 注意要点！！

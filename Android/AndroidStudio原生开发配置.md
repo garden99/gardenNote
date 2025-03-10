@@ -17,15 +17,15 @@
 ![1719625354759](images/uniapp和AndroidStudio混合开发/1719625354759.png)
 
 > 本次项目使用各版本如下
->
+> 
 > Android studio 运行时版本 17.0.9
->
+> 
 > Hbuilder X 4.15
->
+> 
 > Android SDK 4.15 使用项目(HBuilder-Integrate-AS)
->
+> 
 > Android Gradle Plugin Version 4.1.1
->
+> 
 > Gradle Version 7.2
 
 ## 过程
@@ -48,8 +48,16 @@
 ### 更改文件
 
 > 一 ![1719624122125](images/uniapp和AndroidStudio混合开发/1719624122125.png) ![1719624149695](images/uniapp和AndroidStudio混合开发/1719624149695.png)
+> 
+> ## ！这里的appid填写uniapp项目内的appid不要填写uniapp后台的包名/appid/域名，他只能用在包名
+> 
+> ![](E:\desktop\文件\Markdown\Android\images\uniapp和AndroidStudio混合开发\Snipaste_2024-12-25_19-18-39.png)
 
-> 二 ![1719624210944](images/uniapp和AndroidStudio混合开发/1719624210944.png) ![1719624538855](images/uniapp和AndroidStudio混合开发/1719624538855.png)
+> 二 ![1719624210944](images/uniapp和AndroidStudio混合开发/1719624210944.png) 
+> 
+> ![](E:\desktop\文件\Markdown\Android\images\uniapp和AndroidStudio混合开发\Snipaste_2024-12-25_19-31-28.png)
+> 
+> ![1719624538855](images/uniapp和AndroidStudio混合开发/1719624538855.png)
 > 三 ![1719624593978](images/uniapp和AndroidStudio混合开发/1719624593978.png) ![1719624913169](images/uniapp和AndroidStudio混合开发/1719624913169.png)
 > 四，在这个目录下加入证书文件
 > ![1719624971440](images/uniapp和AndroidStudio混合开发/1719624971440.png)
@@ -70,7 +78,7 @@
 ![1731489860191](images/uniapp和AndroidStudio混合开发/1731489860191.png)
 
 > ### 解决思路
->
+> 
 > 本次示例出现该问题的原因是插件模块的minsdk比app主模块的版本大，发生模块冲突，进行更改就好了，如果出现类似问题直接找到没有问题的模块的依赖配置复制粘贴解决最快
 
 ## API

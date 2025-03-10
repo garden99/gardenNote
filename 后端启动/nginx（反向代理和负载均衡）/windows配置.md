@@ -1,10 +1,11 @@
 1. 在官方下载windows的压缩包，在方便的地方解压
+
 2. 双击应用程序运行，或者进入该文件下输入start nginx.exe运行
-
+   
    ## 注意，在启动之后没有停止继续使用启动命令或者双击进行这回导致一些莫名问题
-
+   
    ## 常用命令
-
+   
    1、启动：
 
 > start nginx.exe
@@ -34,6 +35,10 @@ taskkill /f /im nginx.exe > null 杀死nginx进程
 > nginx.exe -s reload
 
 当配置信息修改，需要重新载入这些配置时使用此命令。
+
+如果上述命令执行无效，然后执行最上面的停止命令，就直接使用系统命令终止nginx进程
+
+> taskkill /F /IM nginx.exe
 
 4、重新打开日志文件：
 

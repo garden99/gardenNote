@@ -86,7 +86,7 @@ public class SumModule extends UniModule {
 文件名字和package.json和插件名字成功的是全部一致！！！
 
 ```text
-DCloud-RichAlert/	   #插件id命名的文件夹
+DCloud-RichAlert/       #插件id命名的文件夹
 ├── android/
 │   ├── libs/
 │   │   ├── xxx.jar         # 依赖的 jar 包
@@ -116,10 +116,10 @@ package.json文件编辑成功样例
                 {
                     "type": "module",
                     "name": "HelloAndroid",
-					"class":"com.example.uniplugin_hello.HelloAndroid"
+                    "class":"com.example.uniplugin_hello.HelloAndroid"
                 }
             ],
-			"integrateType": "aar",
+            "integrateType": "aar",
             "minSdkVersion": "16"
         }
     }
@@ -135,3 +135,23 @@ package.json文件编辑成功样例
 > 3. manifest.json选择本地插件选择对应插件
 > 4. 进行云打包选择打自定义调试基座，然后传统打包
 > 5. 最后选择自定义基座运行
+
+![1739513526159](images/uniapp原生安卓插件开发（模块创建，打包，构建插件包）/1739513526159.png)
+
+## 开发调试
+
+> 1. android studio编写好代码，打包成arr包构建插件，然后hbuilder进行选择本地插件，然后重新打自定义基座，然后运行
+> 2. hbuilder第一次运行完开发的本地插件（即选择完本地插件之后），可以通过配置Android studio的项目内的app模块内容（即之前的那些appid，stoekey文件等）和插件模块声明！！！
+>
+>    * 这里有两个文件修改，app/src/main/assets/dcloud_uniplugins.json
+>    *
+>    * ![1739514569143](images/uniapp原生安卓插件开发（模块创建，打包，构建插件包）/1739514569143.png)
+>    * app/build.gradle导入插件模块
+>    * 
+>    * ![1739514816646](images/uniapp原生安卓插件开发（模块创建，打包，构建插件包）/1739514816646.png)
+
+## 注意!!!
+
+Android 原生插件有两个类型，module /component
+
+组件类型是必须要nvue才可以运行的

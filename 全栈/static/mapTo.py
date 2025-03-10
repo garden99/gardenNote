@@ -44,8 +44,8 @@ def convert_data(data):
 
 def main():
     # 源文件名和目标文件名
-    input_filename = './static/map.json'
-    output_filename = './static/newMap.json'
+    input_filename = './map.json'
+    output_filename = './newMap.json'
 
     # 读取原始数据
     data = read_json_file(input_filename)

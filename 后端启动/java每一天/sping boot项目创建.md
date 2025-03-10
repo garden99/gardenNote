@@ -20,8 +20,6 @@
 
 ![1723769387605](images/spingboot项目创建/1723769387605.png)
 
-
-
 ## API
 
 [jdk没有jre的解决方法\_新版jdk没有jre-CSDN博客](https://blog.csdn.net/weixin_45729500/article/details/110509807)

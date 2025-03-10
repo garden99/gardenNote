@@ -4,6 +4,6 @@
 
 ## webView Android使用H5的api
 
-## uts插件开发 较原生java步骤简单很多，但是支持api也没有这么多 
+## uts插件开发 较原生java步骤简单很多，但是支持api也没有这么多
 
 ## Native.js调用安卓api，使用有限，性能不行，但是很简单有效
